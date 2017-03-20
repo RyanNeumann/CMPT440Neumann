@@ -1,0 +1,12 @@
+State,Description
+q0,The man can cross the river with the goat
+q1,The man can cross the river with nothing
+q2,The man can cross the river with the wolf(to q3) or the cabbage(to q4)
+q3,The man can cross the river with the goat
+q4,The man can cross the river with the goat
+q5,The man can cross the river with the cabbage
+q6,The man can cross the river with the wolf
+q7,The man can cross the river with nothing
+q8,The man can cross the river with the goat
+q9,"ACCEPTED - Man crossed with the wolf, goat and cabbage!"
+q10,ERROR STATE!
