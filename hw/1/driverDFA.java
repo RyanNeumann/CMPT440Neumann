@@ -27,14 +27,14 @@ public class driverDFA {
         if (test.accepted()) {
         	
           System.out.println("That is a solution.");
-          System.exit(0);
           
         } else {
         	
           System.out.println("That is not a solution.");
-          System.exit(0);
           
         }
+          
+        System.exit(0);
         
       }
       
