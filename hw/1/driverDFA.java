@@ -1,32 +1,49 @@
 /**
- * 
- * file: driverDFA.java
- * author: Ryan Neumann
- * course: CMPT 440
- * assignment: Homework 1
- *
- */
+* file: driverDFA.java
+* author: Ryan Neumann
+* course: CMPT 440
+* assignment: Homework 01
+* due date: 20 March 2017
+* version: 1.0
+*/
 
-import java.io.IOException;
+
+import java.io.*;
 
 public class driverDFA {
+	
   public static void main(String[] args) throws IOException{
-    try{ 
-      ManWolf d = new ManWolf(); // The dfa created by the ManWolf class
-      String input = args[0]; //This reads an argument from the command line
+	  
+    try{
+    	
+      ManWolf test = new ManWolf();
+      String input = args[0];
+      
       while (input != null) {
-        d.reset();
-        d.process(input);
-        if (d.accepted()) {
+    	  
+        test.reset();
+        test.process(input);
+        
+        if (test.accepted()) {
+        	
           System.out.println("That is a solution.");
           System.exit(0);
-        }else{
+          
+        } else {
+        	
           System.out.println("That is not a solution.");
           System.exit(0);
+          
         }
+        
       }
-    }catch (ArrayIndexOutOfBoundsException ex){
-      System.out.println("Error: Please provide an argument.");
+      
+    } catch (ArrayIndexOutOfBoundsException ex) {
+    	
+      System.out.println("Error - No arguement given. Please try again.");
+      
     }
+    
   }
+  
 }
