@@ -1,0 +1,7 @@
+39 pts
+
+The project attempts to replicate a pacman game.
+The idea has good merit. 
+
+Overall:
+- Decent work below average of a formal languages student. -1pt
